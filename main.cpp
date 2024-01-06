@@ -90,6 +90,7 @@ good to go!
 
  Wait for my code review.
  */
+#include <iostream>
 
 struct FloatType
 {
@@ -107,7 +108,7 @@ struct FloatType
     }
     float divide(float lhs, float rhs)
     {
-        if (rhs == 0)
+        if (rhs == 0.0f)
         {
             std::cout << "warning, floating point division by zero returns 'inf' !" << std::endl;
             return lhs / rhs;
@@ -135,7 +136,7 @@ struct DoubleType
     }
     double divide(double lhs, double rhs)
     {
-        if (rhs == 0)
+        if (rhs == 0.0)
         {
             std::cout << "warning, floating point division by zero returns 'inf' !" << std::endl;
             return lhs / rhs;
